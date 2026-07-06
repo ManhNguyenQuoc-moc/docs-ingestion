@@ -44,6 +44,19 @@ docker compose run --rm ingestion
 
 Compose mounts `data/`, `logs/`, and `state.json` into the container, so local Docker runs keep the same incremental upload state as direct terminal runs.
 
+### Run With Docker
+
+```bash
+docker build -t docs-ingestion .
+docker run --rm --env-file .env -p 8501:8501 docs-ingestion
+```
+
+To run the ingestion job directly:
+
+```bash
+docker run --rm --env-file .env docs-ingestion python src/main.py
+```
+
 ### Deploy On Render
 
 Use `render.yaml` as a Render Blueprint. It defines:
