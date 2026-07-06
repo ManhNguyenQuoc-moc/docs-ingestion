@@ -3,7 +3,7 @@ services:
     name: docs-assistant-ui
     runtime: docker
     plan: free
-    dockerfilePath: ./Dockerfile
+    dockerfilePath: ./Dockerfile.web
     dockerCommand: sh -c "streamlit run src/app.py --server.address 0.0.0.0 --server.port ${PORT:-8501}"
     envVars:
       - key: BASE_URL

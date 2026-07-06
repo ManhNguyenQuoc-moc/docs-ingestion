@@ -8,4 +8,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["python", "src/main.py"]
+CMD ["sh", "-c", "streamlit run src/app.py --server.address 0.0.0.0 --server.port ${PORT:-8501}"]

@@ -1,75 +1,52 @@
 ## Docs Ingestion
 
-Scrapes support articles, converts them to Markdown, uploads only changed files to Gemini File Search, and provides a small Streamlit UI for testing.
+Mini support-bot pipeline for scraping support articles, converting them to Markdown, loading them into Gemini File Search, and running an OptiBot-style assistant with citations.
 
-### Setup
+### Results
 
-```bash
-cp .env.sample .env
-pip install -r requirements.txt
-```
+- Scraped 30 support articles from `support.optisigns.com`.
+- Converted articles into slug-based Markdown files in `data/markdown/`.
+- Uploaded Markdown files to Gemini File Search by API, not manual UI upload.
+- Chunking uses whitespace chunks: 300 tokens per chunk, 50 token overlap.
+- Daily ingestion runs through `src/main.py`: re-scrape, convert, detect hash changes, upload only changed files, and log added/updated/skipped counts.
+- Latest local run: `scraped_articles=30`, `changed_or_new_files=0`, `skipped_unchanged_files=30`, `upload_success=0`.
+- Live app: https://docs-ingestion.onrender.com/
+- Render cron schedule: `0 2 * * *`, which runs daily at 02:00 UTC / 09:00 Vietnam time.
 
-Fill in `GEMINI_API_KEY` and `FILE_SEARCH_STORE_NAME`.
+### Run
 
-### Run From Terminal
+Setup: `cp .env.sample .env`, then fill `GEMINI_API_KEY` and `FILE_SEARCH_STORE_NAME`.
 
-```bash
-python src/main.py
-python src/ask_bot.py "How do I add a YouTube video?"
-```
+Install: `pip install -r requirements.txt`
 
-`src/main.py` runs the full daily job: scrape, convert Markdown, detect changed files, upload changed files, delete old uploaded documents, and write a JSON log in `logs/`.
+Run ingestion once: `python src/main.py`
 
-### Run With Streamlit UI
+Ask sample question: `python src/ask_bot.py "How do I add a YouTube video?"`
 
-```bash
-streamlit run src/app.py
-```
+Run Streamlit UI: `streamlit run src/app.py`
 
-Use the `Ask` tab to test the assistant. Use the `Ingestion` tab to run the same pipeline as `python src/main.py` and view CLI-style logs.
+Run Docker job once: `docker build -t docs-ingestion .` then `docker run --rm --env-file .env docs-ingestion`
 
-### Run With Docker Compose
+Run Docker UI: `docker compose up --build`, then open `http://localhost:8501`.
 
-```bash
-docker compose up --build
-```
+### Deploy
 
-Open `http://localhost:8501`.
+Render uses `render.yaml`:
 
-To run only the ingestion job:
+- `docs-assistant-ui`: Streamlit web UI, built from `Dockerfile.web`.
+- `docs-ingestion-daily`: daily cron job, built from `Dockerfile`, running `python src/main.py`.
+- Cron time: every day at 02:00 UTC / 09:00 Vietnam time.
 
-```bash
-docker compose run --rm ingestion
-```
+Required Render env vars: `GEMINI_API_KEY`, `FILE_SEARCH_STORE_NAME`, `BASE_URL`, `LOCALE`, `MAX_ARTICLES`.
 
-Compose mounts `data/`, `logs/`, and `state.json` into the container, so local Docker runs keep the same incremental upload state as direct terminal runs.
+Daily job logs are available in the Render dashboard under `docs-ingestion-daily` logs/events. Local run artifacts are JSON files in `logs/`.
 
-### Run With Docker
+### Sample Answer
 
-```bash
-docker build -t docs-ingestion .
-docker run --rm --env-file .env -p 8501:8501 docs-ingestion
-```
+Question: `How do I add a YouTube video?`
 
-To run the ingestion job directly:
+Expected citation source: `https://support.optisigns.com/hc/en-us/articles/360051014713-How-to-use-YouTube-with-OptiSigns`
 
-```bash
-docker run --rm --env-file .env docs-ingestion python src/main.py
-```
+Screenshot:
 
-### Deploy On Render
-
-Use `render.yaml` as a Render Blueprint. It defines:
-
-- `docs-assistant-ui`: Streamlit web UI.
-- `docs-ingestion-daily`: daily cron job running `python src/main.py`.
-
-Set these Render environment variables:
-
-```bash
-GEMINI_API_KEY=...
-FILE_SEARCH_STORE_NAME=...
-BASE_URL=https://support.optisigns.com
-LOCALE=en-us
-MAX_ARTICLES=30
-```
+![Assistant sample answer](assets/sample-answer.png)
