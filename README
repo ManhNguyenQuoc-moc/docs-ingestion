@@ -1,0 +1,7 @@
+src/config.py      # đọc biến môi trường
+src/collector.py   # lấy URL + HTML thô
+src/processor.py   # clean HTML + convert Markdown + hash
+src/state.py       # đọc/ghi articles_state.json
+src/uploader.py    # upload file changed lên vector store
+src/logger.py      # ghi logs/last_run.json
+src/main.py        # điều phối toàn bộ job
