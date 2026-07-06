@@ -1,7 +1,6 @@
-src/config.py      # đọc biến môi trường
-src/collector.py   # lấy URL + HTML thô
-src/processor.py   # clean HTML + convert Markdown + hash
-src/state.py       # đọc/ghi articles_state.json
-src/uploader.py    # upload file changed lên vector store
-src/logger.py      # ghi logs/last_run.json
-src/main.py        # điều phối toàn bộ job
+Markdown quality was checked by:
+
+- validating each file contains an H1 title and Article URL
+- checking file count is greater than 30
+- scanning for layout noise such as nav/footer/header content
+- manually reviewing representative generated Markdown files
