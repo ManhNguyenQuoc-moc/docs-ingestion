@@ -1,6 +1,8 @@
 services:
   app:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.web
     env_file:
       - .env
     ports:
@@ -12,7 +14,9 @@ services:
     command: streamlit run src/app.py --server.address 0.0.0.0 --server.port 8501
 
   ingestion:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     env_file:
       - .env
     volumes:
