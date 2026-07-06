@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+data/markdown/
+data/articles_state.json
+logs/last_run.json
