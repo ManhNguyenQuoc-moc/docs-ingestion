@@ -1,6 +1,62 @@
-Markdown quality was checked by:
+## Docs Ingestion
 
-- validating each file contains an H1 title and Article URL
-- checking file count is greater than 30
-- scanning for layout noise such as nav/footer/header content
-- manually reviewing representative generated Markdown files
+Scrapes support articles, converts them to Markdown, uploads only changed files to Gemini File Search, and provides a small Streamlit UI for testing.
+
+### Setup
+
+```bash
+cp .env.sample .env
+pip install -r requirements.txt
+```
+
+Fill in `GEMINI_API_KEY` and `FILE_SEARCH_STORE_NAME`.
+
+### Run From Terminal
+
+```bash
+python src/main.py
+python src/ask_bot.py "How do I add a YouTube video?"
+```
+
+`src/main.py` runs the full daily job: scrape, convert Markdown, detect changed files, upload changed files, delete old uploaded documents, and write a JSON log in `logs/`.
+
+### Run With Streamlit UI
+
+```bash
+streamlit run src/app.py
+```
+
+Use the `Ask` tab to test the assistant. Use the `Ingestion` tab to run the same pipeline as `python src/main.py` and view CLI-style logs.
+
+### Run With Docker Compose
+
+```bash
+docker compose up --build
+```
+
+Open `http://localhost:8501`.
+
+To run only the ingestion job:
+
+```bash
+docker compose run --rm ingestion
+```
+
+Compose mounts `data/`, `logs/`, and `state.json` into the container, so local Docker runs keep the same incremental upload state as direct terminal runs.
+
+### Deploy On Render
+
+Use `render.yaml` as a Render Blueprint. It defines:
+
+- `docs-assistant-ui`: Streamlit web UI.
+- `docs-ingestion-daily`: daily cron job running `python src/main.py`.
+
+Set these Render environment variables:
+
+```bash
+GEMINI_API_KEY=...
+FILE_SEARCH_STORE_NAME=...
+BASE_URL=https://support.optisigns.com
+LOCALE=en-us
+MAX_ARTICLES=30
+```

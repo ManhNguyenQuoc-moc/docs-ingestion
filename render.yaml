@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: docs-assistant-ui
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerCommand: streamlit run src/app.py --server.address 0.0.0.0 --server.port $PORT
+    envVars:
+      - key: BASE_URL
+        value: https://support.optisigns.com
+      - key: LOCALE
+        value: en-us
+      - key: MAX_ARTICLES
+        value: 30
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: FILE_SEARCH_STORE_NAME
+        sync: false
+
+  - type: cron
+    name: docs-ingestion-daily
+    runtime: docker
+    schedule: "0 2 * * *"
+    dockerfilePath: ./Dockerfile
+    dockerCommand: python src/main.py
+    envVars:
+      - key: BASE_URL
+        value: https://support.optisigns.com
+      - key: LOCALE
+        value: en-us
+      - key: MAX_ARTICLES
+        value: 30
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: FILE_SEARCH_STORE_NAME
+        sync: false
