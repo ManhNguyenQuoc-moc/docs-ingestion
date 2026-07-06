@@ -27,7 +27,9 @@ Example with another question: `python src/ask_bot.py "How do I pre-configure Wi
 
 Run Streamlit UI: `streamlit run src/app.py`
 
-Run Docker job once: `docker build -t docs-ingestion .` then `docker run --rm --env-file .env docs-ingestion`
+Run Docker job once with `.env`: `docker build -t docs-ingestion .` then `docker run --rm --env-file .env docs-ingestion`
+
+Run Docker job once with explicit env vars: `docker run --rm -e GEMINI_API_KEY=your_key -e FILE_SEARCH_STORE_NAME=your_store_name -e BASE_URL=https://support.optisigns.com -e LOCALE=en-us -e MAX_ARTICLES=30 docs-ingestion`
 
 Run Docker UI: `docker compose up --build`, then open `http://localhost:8501`.
 
