@@ -31,6 +31,8 @@ Run Docker job once: `docker build -t docs-ingestion .` then `docker run --rm --
 
 Run Docker UI: `docker compose up --build`, then open `http://localhost:8501`.
 
+`Dockerfile` is intentionally the one-shot ingestion job required by the test. `Dockerfile.web` is only for the long-running Streamlit demo service.
+
 ### Deploy
 
 Render uses `render.yaml`:
