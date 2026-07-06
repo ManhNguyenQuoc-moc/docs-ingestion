@@ -1,5 +1,6 @@
-requests
+google-genai
 python-dotenv
+requests
 beautifulsoup4
 markdownify
-google-genai
+streamlit
