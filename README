@@ -21,7 +21,9 @@ Install: `pip install -r requirements.txt`
 
 Run ingestion once: `python src/main.py`
 
-Ask sample question: `python src/ask_bot.py "How do I add a YouTube video?"`
+Ask any question from terminal: `python src/ask_bot.py "How do I add a YouTube video?"`
+
+Example with another question: `python src/ask_bot.py "How do I pre-configure Wi-Fi?"`
 
 Run Streamlit UI: `streamlit run src/app.py`
 
