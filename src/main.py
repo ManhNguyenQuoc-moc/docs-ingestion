@@ -302,6 +302,8 @@ def write_log(summary: dict):
         encoding="utf-8",
     )
 
+    return log_file
+
 
 def run_scraper():
     """
@@ -439,11 +441,14 @@ def main():
         "store_size_bytes": store.size_bytes,
     }
 
-    write_log(summary)
+    log_file = write_log(summary)
 
     print("\nDaily ingestion summary")
     for key, value in summary.items():
         print(f"{key}: {value}")
+
+    print(f"log_file: {log_file}")
+    print("INGESTION_SUMMARY_JSON=" + json.dumps(summary, ensure_ascii=False))
 
     return summary
 

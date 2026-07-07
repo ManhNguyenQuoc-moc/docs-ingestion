@@ -8,5 +8,4 @@ venv/
 data/markdown/
 data/articles_state.json
 data/raw/
-logs/
 state.json
