@@ -1,0 +1,251 @@
+{
+  "file_search_store_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k",
+  "file_search_store_display_name": "docs-ingestion-store",
+  "total_local_files": 30,
+  "uploaded_new_count": 30,
+  "skipped_existing_count": 0,
+  "failed_count": 0,
+  "accepted_details": [
+    {
+      "file": "data\\markdown\\ai-camera-app-quick-start.md",
+      "display_name": "ai-camera-app-quick-start.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/aicameraappquickstartmd-o7dmz1t10eqx",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\connect-cisco-webex-rooms-to-optisigns-digital-signage.md",
+      "display_name": "connect-cisco-webex-rooms-to-optisigns-digital-signage.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/connectciscowebexroomstoopt-41sec4on3akd",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\connect-google-meet-hardware-to-optisigns-digital-signage.md",
+      "display_name": "connect-google-meet-hardware-to-optisigns-digital-signage.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/connectgooglemeethardwareto-a25qstmm6oya",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\connect-microsoft-teams-rooms-to-optisigns-digital-signage.md",
+      "display_name": "connect-microsoft-teams-rooms-to-optisigns-digital-signage.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/connectmicrosoftteamsroomst-aii5l4sss8xx",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\connect-zoom-rooms-to-optisigns-digital-signage.md",
+      "display_name": "connect-zoom-rooms-to-optisigns-digital-signage.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/connectzoomroomstooptisigns-laxcyqnha8bg",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\does-optisigns-offer-non-profit-education-discount.md",
+      "display_name": "does-optisigns-offer-non-profit-education-discount.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/doesoptisignsoffernonprofit-wauez0gjia36",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\engage-plan-faqs.md",
+      "display_name": "engage-plan-faqs.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/engageplanfaqsmd-bylu3wqp069i",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\how-can-i-remove-delete-uploaded-files-or-assets.md",
+      "display_name": "how-can-i-remove-delete-uploaded-files-or-assets.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/howcaniremovedeleteuploaded-vgyukm6j4hus",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\how-to-display-a-snowflake-dashboard-with-optisigns.md",
+      "display_name": "how-to-display-a-snowflake-dashboard-with-optisigns.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/howtodisplayasnowflakedashb-dl4syvtpcbjg",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\how-to-display-content-inside-websites-that-require-login.md",
+      "display_name": "how-to-display-content-inside-websites-that-require-login.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/howtodisplaycontentinsidewe-5p15l4gm94ry",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\how-to-enable-disable-auto-update-for-optisigns-app-on-fire-tv.md",
+      "display_name": "how-to-enable-disable-auto-update-for-optisigns-app-on-fire-tv.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/howtoenabledisableautoupdat-sb8sxe68lcge",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\how-to-factory-reset-your-fire-stick-device.md",
+      "display_name": "how-to-factory-reset-your-fire-stick-device.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/howtofactoryresetyourfirest-0071sekkp2t0",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\how-to-install-an-apk-file-on-your-fire-tv.md",
+      "display_name": "how-to-install-an-apk-file-on-your-fire-tv.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/howtoinstallanapkfileonyour-4c2gblvlz5c8",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\how-to-manage-sub-account-billing-with-optisigns.md",
+      "display_name": "how-to-manage-sub-account-billing-with-optisigns.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/howtomanagesubaccountbillin-l5m333mtvclx",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\how-to-re-encode-video-files-for-better-compatibility-on-your-devices.md",
+      "display_name": "how-to-re-encode-video-files-for-better-compatibility-on-your-devices.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/howtoreencodevideofilesforb-chasctjmyy9q",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\how-to-share-playlist-and-folder-with-external-users.md",
+      "display_name": "how-to-share-playlist-and-folder-with-external-users.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/howtoshareplaylistandfolder-wxctnhy878rr",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\how-to-use-follow-us-app.md",
+      "display_name": "how-to-use-follow-us-app.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/howtousefollowusappmd-a4v8jzy1lcc8",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\how-to-use-optisigns-template-designer-to-make-your-digital-signs-in-minutes.md",
+      "display_name": "how-to-use-optisigns-template-designer-to-make-your-digital-signs-in-minutes.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/howtouseoptisignstemplatede-9592b40nd8uh",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\how-to-use-rss-feeds-with-optisigns.md",
+      "display_name": "how-to-use-rss-feeds-with-optisigns.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/howtouserssfeedswithoptisig-96ijx6wi4up7",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\how-to-use-the-data-studio-app.md",
+      "display_name": "how-to-use-the-data-studio-app.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/howtousethedatastudioappmd-x13cqfhpy7km",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\how-to-use-website-screenshot-app.md",
+      "display_name": "how-to-use-website-screenshot-app.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/howtousewebsitescreenshotap-ugozc563rgpl",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\how-to-use-youtube-with-optisigns.md",
+      "display_name": "how-to-use-youtube-with-optisigns.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/howtouseyoutubewithoptisign-xsab6diiod5x",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\my-image-content-are-bleeding-off-the-screens-with-fire-tv-need-screen-calibration.md",
+      "display_name": "my-image-content-are-bleeding-off-the-screens-with-fire-tv-need-screen-calibration.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/myimagecontentarebleedingof-9l22no0qqrgj",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\optisigns-digital-signage-app-for-zoom-adding-using-and-removing-the-app.md",
+      "display_name": "optisigns-digital-signage-app-for-zoom-adding-using-and-removing-the-app.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/optisignsdigitalsignageappf-z22whe4b1z4k",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\optistick-troubleshooting-guide.md",
+      "display_name": "optistick-troubleshooting-guide.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/optisticktroubleshootinggui-gndju92u0zun",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\optistick.md",
+      "display_name": "optistick.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/optistickmd-q6yfw179kacw",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\pre-configure-wi-fi-with-optisigns-devices.md",
+      "display_name": "pre-configure-wi-fi-with-optisigns-devices.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/preconfigurewifiwithoptisig-30fpfuzxqypx",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\room-integrations-turn-your-meeting-rooms-into-digital-signage.md",
+      "display_name": "room-integrations-turn-your-meeting-rooms-into-digital-signage.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/roomintegrationsturnyourmee-m7pdp9nixtio",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\using-the-japan-earthquake-app.md",
+      "display_name": "using-the-japan-earthquake-app.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/usingthejapanearthquakeappm-31fqm2l5o4az",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    },
+    {
+      "file": "data\\markdown\\whitelist-optisigns-ip-addresses-ports.md",
+      "display_name": "whitelist-optisigns-ip-addresses-ports.md",
+      "operation_name": "fileSearchStores/docsingestionstore-ui9g9e86qr6k/upload/operations/whitelistoptisignsipaddress-z8m93kov1cro",
+      "operation_done_at_upload_time": null,
+      "status": "accepted",
+      "mime_type": "text/markdown"
+    }
+  ],
+  "failed_details": []
+}

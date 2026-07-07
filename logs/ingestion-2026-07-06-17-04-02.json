@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-07-06T17:04:02.241694",
+  "scraped_articles": 30,
+  "processed_total": 30,
+  "processor_added": 0,
+  "processor_updated": 0,
+  "processor_skipped": 30,
+  "local_markdown_files": 30,
+  "changed_or_new_files": 0,
+  "skipped_unchanged_files": 30,
+  "deleted_old_documents": 0,
+  "upload_success": 0,
+  "upload_failed": 0,
+  "failed_files": [],
+  "active_documents": 59,
+  "pending_documents": null,
+  "failed_documents": null,
+  "store_size_bytes": 332660
+}

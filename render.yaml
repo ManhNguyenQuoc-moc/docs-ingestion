@@ -22,7 +22,7 @@ services:
     runtime: docker
     schedule: "0 2 * * *"
     dockerfilePath: ./Dockerfile
-    dockerCommand: python src/main.py
+    dockerCommand: python -u src/main.py
     envVars:
       - key: BASE_URL
         value: https://support.optisigns.com

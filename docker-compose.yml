@@ -23,6 +23,6 @@ services:
       - ./data:/app/data
       - ./logs:/app/logs
       - ./state.json:/app/state.json
-    command: python src/main.py
+    command: python -u src/main.py
     profiles:
       - jobs
