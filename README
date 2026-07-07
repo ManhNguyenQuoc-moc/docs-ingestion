@@ -11,7 +11,7 @@ Mini support-bot pipeline for scraping support articles, converting them to Mark
 - Daily ingestion runs through `src/main.py`: re-scrape, convert, detect hash changes, upload only changed files, and log added/updated/skipped counts.
 - Latest local run: `scraped_articles=30`, `changed_or_new_files=0`, `skipped_unchanged_files=30`, `upload_success=0`.
 - Live app: https://docs-ingestion.onrender.com/
-- Render cron schedule: `0 2 * * *`, which runs daily at 02:00 UTC / 09:00 Vietnam time.
+- Render cron schedule: `45 5 * * *`, which runs daily at 05:45 UTC / 12:45 Vietnam time.
 
 ### Setup
 
@@ -45,7 +45,7 @@ Render uses `render.yaml`:
 
 - `docs-assistant-ui`: Streamlit web UI, built from `Dockerfile.web`.
 - `docs-ingestion-daily`: daily cron job, built from `Dockerfile`, running `python src/main.py`.
-- Cron time: every day at 02:00 UTC / 09:00 Vietnam time.
+- Cron time: every day at 05:45 UTC / 12:45 Vietnam time.
 
 Required Render env vars: `GEMINI_API_KEY`, `FILE_SEARCH_STORE_NAME`, `BASE_URL`, `LOCALE`, `MAX_ARTICLES`.
 
