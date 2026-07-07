@@ -20,7 +20,7 @@ services:
   - type: cron
     name: docs-ingestion-daily
     runtime: docker
-    schedule: "0 2 * * *"
+    schedule: "45 5 * * *"
     dockerfilePath: ./Dockerfile
     dockerCommand: python -u src/main.py
     envVars:
